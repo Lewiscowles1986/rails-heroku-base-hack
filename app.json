@@ -1,0 +1,39 @@
+{
+  "name": "Ruby on Rails Heroku starter project",
+  "description": "Basic Ruby on Rails 6 heroku project boilerplate",
+  "keywords": ["heroku", "boilerplate", "2020", "lewiscowles"],
+  "repository": "https://github.com/Lewiscowles1986/rails-heroku-base-hack",
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "as": "DATABASE" 
+    }
+  ],
+  "env": {
+    "APP_DEBUG": "false",
+    "RAILS_ENV": "production"
+  },
+  "environments": {
+    "review": {
+      "env": {
+        "APP_DEBUG": "true",
+        "RAILS_ENV": "production",
+        "DEPLOYMENT_TYPE" : "review"
+      }
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
