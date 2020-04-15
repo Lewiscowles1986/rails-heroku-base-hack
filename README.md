@@ -1,24 +1,21 @@
-# README
+# Rails Heroku starter project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-Things you may want to cover:
 
-* Ruby version
+## Bare essentials
 
-* System dependencies
+This was created with Ruby 2.7.1 and Rails 6 with rvm
 
-* Configuration
+It additionally uses sqlite3, postgres
 
-* Database creation
+Webpacker uses nodejs 12.16.2+ with yarn through nvm
 
-* Database initialization
+### System dependencies
 
-* How to run the test suite
+This is designed to run on debian and ubuntu systems, but should be compatible with any *NIX system such as OSx for Mac
 
-* Services (job queues, cache servers, search engines, etc.)
+## Disclaimer
 
-* Deployment instructions
-
-* ...
+This is some opinionated boilerplate. Don't become upset if it's not much more robust than Rails out-of-the-box.
+No warranty or representation of merchantability comes with the rights to use, modify and distribute this repo.
